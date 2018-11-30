@@ -1,0 +1,8 @@
+Running with Junit
+Running from TestNG - Cucumber Testng Plugin
+Run from testng.xml
+Running from Maven - surefire plugin
+  - Without Testng.xml +  File Ending with test
+  - Similarly for Junit Runner
+  - Run from testng.xml
+  

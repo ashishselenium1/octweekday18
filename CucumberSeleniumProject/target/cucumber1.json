@@ -1,0 +1,217 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 175665119,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GenericSteps.init()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Create a Portfolio",
+        "description": "",
+        "id": "creation-and-deletion-of-portfolio;create-a-portfolio",
+        "after": [
+          {
+            "result": {
+              "duration": 960751871,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GenericSteps.quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4409768513,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I open Chrome",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chrome",
+                  "offset": 7
+                }
+              ],
+              "location": "GenericSteps.openBrowser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2968577347,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I navigate to loginPage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "loginPage",
+                  "offset": 14
+                }
+              ],
+              "location": "GenericSteps.navigate(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat com.rediff.connector.WebConnector.type(WebConnector.java:84)\r\n\tat com.rediff.AppSteps.defaultLogin(AppSteps.java:18)\r\n\tat ✽.I login with default username and password(src/test/resources/com/rediff/portfolio.feature:27)\r\n",
+              "duration": 6797077766,
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "I login with default username and password",
+            "match": {
+              "location": "AppSteps.defaultLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "Login should be success",
+            "match": {
+              "arguments": [
+                {
+                  "val": "success",
+                  "offset": 16
+                }
+              ],
+              "location": "RediffValidations.validateLogin(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I click on createPortfolioButton_id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "createPortfolioButton_id",
+                  "offset": 11
+                }
+              ],
+              "location": "GenericSteps.click(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "I clear portfolioNameText_xpath",
+            "match": {
+              "arguments": [
+                {
+                  "val": "portfolioNameText_xpath",
+                  "offset": 8
+                }
+              ],
+              "location": "GenericSteps.clear(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "I type Dec18 in portfolioNameText_xpath",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dec18",
+                  "offset": 7
+                },
+                {
+                  "val": "portfolioNameText_xpath",
+                  "offset": 16
+                }
+              ],
+              "location": "GenericSteps.type(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "I click on createPortfolioSubmitButton_xpath",
+            "match": {
+              "arguments": [
+                {
+                  "val": "createPortfolioSubmitButton_xpath",
+                  "offset": 11
+                }
+              ],
+              "location": "GenericSteps.click(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "Portfolio should be created successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "successfully",
+                  "offset": 28
+                }
+              ],
+              "location": "RediffValidations.validatePortFolioCreation(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Portfolio"
+          },
+          {
+            "name": "@CreatePortfolio"
+          }
+        ]
+      }
+    ],
+    "name": "Creation and deletion of portfolio",
+    "description": "  I want to create and delete portfolios",
+    "id": "creation-and-deletion-of-portfolio",
+    "keyword": "Feature",
+    "uri": "src/test/resources/com/rediff/portfolio.feature",
+    "tags": [
+      {
+        "name": "@Portfolio",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

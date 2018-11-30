@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">I open Chrome (PASSED : 4s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I navigate to loginPage (PASSED : 3s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I login with default username and password (FAILED : 20s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Login should be success (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I click on createPortfolioButton_id (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I clear portfolioNameText_xpath (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I type Dec18 in portfolioNameText_xpath (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I click on createPortfolioSubmitButton_xpath (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Portfolio should be created successfully (SKIPPED)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="BDD Test Suite" duration-ms="30453" started-at="2018-11-30T01:43:36Z" finished-at="2018-11-30T01:44:06Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.rediff.CucumberProjectTestngRunner@50c87b21]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="BDD Tests for Rediff" duration-ms="30453" started-at="2018-11-30T01:43:36Z" finished-at="2018-11-30T01:44:06Z">
+      <class name="com.rediff.CucumberProjectTestngRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.rediff.CucumberProjectTestngRunner@50c87b21]" name="setUpClass" is-config="true" duration-ms="430" started-at="2018-11-30T01:43:36Z" finished-at="2018-11-30T01:43:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="SKIP" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.rediff.CucumberProjectTestngRunner@50c87b21]" name="runScenario" duration-ms="29488" started-at="2018-11-30T01:43:37Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-11-30T01:44:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create a Portfolio"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Creation and deletion of portfolio"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.rediff.connector.WebConnector.type(WebConnector.java:84)
+at com.rediff.AppSteps.defaultLogin(AppSteps.java:18)
+at ✽.I login with default username and password(src/test/resources/com/rediff/portfolio.feature:27)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I open Chrome (PASSED : 4s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I navigate to loginPage (PASSED : 3s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I login with default username and password (FAILED : 20s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Login should be success (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I click on createPortfolioButton_id (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I clear portfolioNameText_xpath (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I type Dec18 in portfolioNameText_xpath (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I click on createPortfolioSubmitButton_xpath (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Portfolio should be created successfully (SKIPPED)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.rediff.CucumberProjectTestngRunner@50c87b21]" name="tearDownClass" is-config="true" duration-ms="148" started-at="2018-11-30T01:44:06Z" finished-at="2018-11-30T01:44:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.rediff.CucumberProjectTestngRunner -->
+    </test> <!-- BDD Tests for Rediff -->
+  </suite> <!-- BDD Test Suite -->
+</testng-results>
